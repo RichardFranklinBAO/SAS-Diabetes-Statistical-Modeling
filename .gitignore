@@ -1,0 +1,12 @@
+# Never commit original participant-level data or local copies.
+**/data/raw/
+**/data/*full_data*.csv
+**/data/*original*.csv
+**/data/*.xlsx
+**/data/*.sas7bdat
+**/data/*.xpt
+**/*.log
+**/*.lst
+**/.DS_Store
+**/__pycache__/
+!**/data/synthetic_diabetes_demo.csv
