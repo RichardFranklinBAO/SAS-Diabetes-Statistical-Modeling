@@ -1,12 +1,7 @@
 # Research outputs
 
-## Final submitted course report
+**Original final report:** [BIOS509_Final_Course_Report_Wu_Bao.pdf](BIOS509_Final_Course_Report_Wu_Bao.pdf) — 26-page jointly authored course report by Xian Wu and Conglin Bao, including methods, results, tables and diagnostic plots.
 
-**[BIOS509_Final_Course_Report_Wu_Bao.pdf](BIOS509_Final_Course_Report_Wu_Bao.pdf)** — 26-page collaborative BIOS 509 report containing the research question, methods, statistical findings, tables, model diagnostics, and discussion.
+**GitHub status:** The PDF is not uploaded yet because the connected GitHub write interface supports text but not this binary file. The full project ZIP contains it. To make the link above work, use GitHub's **Add file → Upload files** within this `outputs/` folder.
 
-## Demonstration artifacts
-
-- [`synthetic_demo_summary.csv`](synthetic_demo_summary.csv): descriptive summary computed by Python from explicitly synthetic data, not SAS output.
-- After running `code/run_synthetic_demo.sas` in a licensed SAS session, **`BIOS509_Synthetic_Demo_SAS_Output.pdf`** will be created in this folder. This file is deliberately *not* included until it has actually been produced by SAS.
-
-**Do not confuse outputs from the synthetic example with the archived results from the actual course project.**
+The single final SAS script, when run in SAS on the provided synthetic data, is configured to generate `BIOS509_Synthetic_SAS_Results.pdf` here. This output has not been produced or checked with SAS and is not included. Synthetic outputs must not be confused with the original course report.

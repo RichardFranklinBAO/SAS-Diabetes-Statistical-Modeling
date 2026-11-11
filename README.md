@@ -1,20 +1,15 @@
-# SAS Statistical Research Portfolio | BIOS 509
+# SAS Statistical Research Portfolio
 
-**SAS programming · regression modeling · ANOVA · model diagnostics · research communication**  
-**Emory University | BIOS 509 Take-home Project**  
-**Original course report by Xian Wu and Conglin Bao**
+**Emory University · BIOS 509 · SAS/STAT**  
+**Original course report authors:** Xian Wu and Conglin Bao
 
-This repository documents a collaborative SAS-based statistical analysis of blood-glucose outcomes. It demonstrates use of **PROC IMPORT, PROC MEANS, PROC FREQ, PROC GLM, PROC LOGISTIC, PROC UNIVARIATE**, post-hoc testing, stratified analyses, and model diagnostics.
+A consolidated statistical programming project using **SAS**: data management, one-way ANOVA, Scheffé comparisons, nested logistic regression, model comparison and influence diagnostics.
 
-### Start here
+### Project files
 
-- **[Project overview and reproduction guide](BIOS509_SAS_Diabetes_Research_Project/README.md)**
-- **[Original SAS coursework source](BIOS509_SAS_Diabetes_Research_Project/code/original_coursework.sas)** (unaltered except filename)
-- **[Reconstructed SAS pipeline](BIOS509_SAS_Diabetes_Research_Project/code/run_synthetic_demo.sas)** — later independently prepared demonstration, not the original submission
-- **[Synthetic demonstration dataset](BIOS509_SAS_Diabetes_Research_Project/data/synthetic_diabetes_demo.csv)** — not real participants
-- **[Final report overview (available now)](BIOS509_SAS_Diabetes_Research_Project/outputs/Final_Report_Overview.md)**; the original 26-page PDF is pending direct GitHub upload to `outputs/`
-- **[Reports and output guide](BIOS509_SAS_Diabetes_Research_Project/outputs/README.md)**
+- **[Research overview & instructions](BIOS509_SAS_Diabetes_Research_Project/README.md)**
+- **[One final SAS analysis program](BIOS509_SAS_Diabetes_Research_Project/code/BIOS509_Diabetes_Analysis_Final.sas)**
+- **[Synthetic demo data](BIOS509_SAS_Diabetes_Research_Project/data/synthetic_diabetes_demo.csv)**
+- **[Final 26-page report](BIOS509_SAS_Diabetes_Research_Project/outputs/BIOS509_Final_Course_Report_Wu_Bao.pdf)** — not uploaded to GitHub yet; included in the downloadable project ZIP.
 
-> **Important:** The individual-level course dataset is intentionally **not distributed**. The provided CSV is explicitly synthetic and is intended only to demonstrate the SAS workflow. Numerical results in the original report refer to the original course dataset and **will not reproduce** on the synthetic sample. See project documentation for scope and limitations.
-
-This is a **course research portfolio**, not a peer-reviewed or clinical guidance publication.
+**Important:** No original individual-level patient data are included. The synthetic sample cannot reproduce the original report's numerical results. The consolidated program adds code reconstructed later from the submitted report and is not presented as an untouched original course submission. Its SAS runtime execution has not yet been verified.
