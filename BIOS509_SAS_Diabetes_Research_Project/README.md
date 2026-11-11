@@ -27,7 +27,7 @@ BIOS509_SAS_Diabetes_Research_Project/
 ## Research materials
 
 - **[Final course report](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)** — actual group report including model specifications, results, and diagnostics.
-- **[One final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas)** — organized program with statistical procedures and added code reconstructed from the report.
+- **[One final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas)** — organized program with statistical procedures.
 - **[Synthetic example dataset](data/synthetic_diabetes_demo.csv)** — 487 simulated records, intended to illustrate the workflow, not reproduce course estimates.
 - **[Data dictionary](data/DATA_DICTIONARY.md)** — inputs, variable descriptions, and safe-sharing notes.
 - **[Outputs guide](outputs/README.md)** — which PDF is archived and which output remains unverified.
