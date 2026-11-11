@@ -1,6 +1,6 @@
 # BIOS 509 — Diabetes Glucose Modeling with SAS
 
-**Original course project and report:** Xian Wu and Conglin Bao · Emory University
+**Original course project and report:** Conglin Bao and Xian Wu · Emory University
 
 **[Read the original final report (PDF, 26 pages)](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)**
 
