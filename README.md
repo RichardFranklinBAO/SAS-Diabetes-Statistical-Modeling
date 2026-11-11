@@ -26,10 +26,6 @@ A course-based statistical research project investigating glucose levels and ass
 
 ## Provenance and reproducibility
 
-**The linked PDF is the original jointly authored course report.** The single SAS script is a **later consolidated portfolio edition**: it integrates source code available from the course with additional implementations reconstructed from the written report; it should not be mistaken for an untouched historical submission.
+The original patient-level course dataset is excluded. The synthetic dataset is for demonstrating program structure, so its numerical results will not match the original course report.
 
-Only **synthetic** data are shared in this repository. The original patient-level course dataset is excluded. The synthetic dataset is for demonstrating program structure, so its numerical results will not match the original course report.
-
-The SAS program has **not yet been fully executed and verified in SAS** in this packaging environment. Do not interpret it as proof of exact end-to-end replication. See the [project guide](BIOS509_SAS_Diabetes_Research_Project/README.md) for run instructions and limitations.
-
-**Sharing note:** This repository remains private as of the latest review. Permission to publicly distribute the jointly authored course report should be confirmed before making it public. This is coursework, not peer-reviewed medical guidance.
+See the [project guide](BIOS509_SAS_Diabetes_Research_Project/README.md) for run instructions and limitations.
