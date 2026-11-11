@@ -1,14 +1,15 @@
 # BIOS 509 — Diabetes Glucose Modeling with SAS
 
-**Emory University · BIOS 509**  
-**Original report and project:** Xian Wu and Conglin Bao
+**Original course project and report:** Xian Wu and Conglin Bao · Emory University
+
+**[Read the original final report (PDF, 26 pages)](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)**
 
 ## Research questions
 
-1. Does glucose vary by group? One-way ANOVA, Scheffé post-hoc comparisons, prespecified contrast, residual and influence diagnostics.
-2. Are weight and HbA1c associated with glucose above 150 mg/dL? Compare three nested logistic models with group-specific intercepts and interactions.
+1. Do mean glucose levels differ across four groups? Evaluate using one-way ANOVA, Scheffé post-hoc comparisons, a prespecified contrast, and residual/influence diagnostics.
+2. How are body weight and HbA1c associated with glucose above 150 mg/dL? Compare nested logistic regressions with group-level intercept effects and slope interactions.
 
-## Simplified structure
+## Repository structure
 
 ```text
 BIOS509_SAS_Diabetes_Research_Project/
@@ -19,25 +20,44 @@ BIOS509_SAS_Diabetes_Research_Project/
 │   ├── synthetic_diabetes_demo.csv
 │   └── DATA_DICTIONARY.md
 └── outputs/
-    ├── BIOS509_Final_Course_Report_Wu_Bao.pdf
+    ├── Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf
     └── README.md
 ```
 
-## Run
+## Research materials
 
-1. Open [the single final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas) in SAS Studio, SAS 9.4 or SAS Viya (SAS/STAT required).
-2. Set `PROJECT_DIR` near the top to the absolute path of this project folder **as seen by the SAS server**. Do not include a trailing slash.
-3. Run the entire program. It reads [the included synthetic CSV](data/synthetic_diabetes_demo.csv) and is configured to generate `outputs/BIOS509_Synthetic_SAS_Results.pdf`. This generated PDF has not been included, because SAS runtime has not been verified here.
-4. For authorized analyses of original data, change `INPUT_CSV` locally to an approved file location. Do not upload restricted course records.
+- **[Final course report](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)** — actual group report including model specifications, results, and diagnostics.
+- **[One final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas)** — organized program with statistical procedures and added code reconstructed from the report.
+- **[Synthetic example dataset](data/synthetic_diabetes_demo.csv)** — 487 simulated records, intended to illustrate the workflow, not reproduce course estimates.
+- **[Data dictionary](data/DATA_DICTIONARY.md)** — inputs, variable descriptions, and safe-sharing notes.
+- **[Outputs guide](outputs/README.md)** — which PDF is archived and which output remains unverified.
 
-## Skills
+## SAS methods represented
 
-`PROC IMPORT`, `PROC FREQ`, `PROC MEANS`, `PROC TABULATE`, `PROC GLM`, `PROC UNIVARIATE`, `PROC REG`, `PROC LOGISTIC`, `PROC SQL`, SAS ODS reporting, diagnostics, model comparison and documentation.
+| Area | SAS procedures / analysis |
+| --- | --- |
+| Data import and checks | `PROC IMPORT`, `PROC CONTENTS`, `PROC FREQ`, `PROC MEANS` |
+| Summary tables | `PROC TABULATE` |
+| ANOVA and group contrasts | `PROC GLM`, Scheffé adjusted comparisons, `ESTIMATE` |
+| Residual and normality checks | `PROC UNIVARIATE`, histogram, QQ plot |
+| Influence diagnostics | `PROC REG`, regression residuals, leverage, Cook's D, DFFITS |
+| Binary outcomes | `PROC LOGISTIC`, three nested specifications and group interactions |
+| Model comparisons | Fit statistics, `PROC SQL` extraction, likelihood-ratio calculations |
+| Presentation | SAS ODS configured to produce an analysis PDF; original technical report linked above |
 
-## Final report and provenance
+## Run the consolidated SAS script
 
-The original 26-page jointly authored coursework report is in [outputs/](outputs/BIOS509_Final_Course_Report_Wu_Bao.pdf). **Its PDF still needs manual upload to GitHub**; it is included in the downloadable ZIP.
+1. Open [`code/BIOS509_Diabetes_Analysis_Final.sas`](code/BIOS509_Diabetes_Analysis_Final.sas) in **SAS Studio, SAS 9.4 or SAS Viya**, with SAS/STAT available.
+2. Edit `PROJECT_DIR` at the top so it points to the absolute directory containing `code/`, `data/`, and `outputs/`, as seen by the SAS execution server. Avoid a trailing slash.
+3. Run the program. It reads `data/synthetic_diabetes_demo.csv` and is configured to write `outputs/BIOS509_Synthetic_SAS_Results.pdf`.
+4. Examine the SAS log and procedure output for errors. The output PDF is **not** checked into this repository because a full SAS runtime verification has not been performed.
+5. If separately authorized to analyze the original course dataset, point `INPUT_CSV` to its **local approved location**. Never commit individual-level patient data.
 
-The initial course source contained ANOVA, regression diagnostics and parts of the logistic analysis but did not contain every logistic specification described in the report. This is a **later consolidated portfolio script**, including reconstructed material drawn from the report; it is not an untouched version of the 2025 submission. Only synthetic observations are distributed. They do **not** reproduce the original report's statistical results.
+## Research provenance and limitations
 
-**Verification:** CSV structure/row count and corresponding model specifications have been independently checked; full SAS execution has not occurred here. The report is preserved as originally provided and its figures/results have not been silently revised. Public posting of course material should follow the relevant course/institution policy. This is a course exercise, not clinical guidance.
+- The course report was jointly authored by **Xian Wu and Conglin Bao**. Its findings and numerical results concern the **original 487-record course dataset**, which is not uploaded.
+- `BIOS509_Diabetes_Analysis_Final.sas` is a **later consolidated portfolio program**, not the verbatim original submission. Some logistic model specifications were reconstructed from the report after the course.
+- The accompanying synthetic CSV is unrelated to the original patient records and **cannot reproduce** numerical findings in the final report.
+- SAS execution of the consolidated script remains **unverified**. This repository presents documented code and a safe demonstration input, not a certified exact replication.
+- The report is preserved as provided, including any original inconsistencies; no results are silently rewritten. This observational classroom exercise is not clinical guidance.
+- Confirm applicable instructor/course rules and coauthor sharing permissions before public distribution of the original report.
