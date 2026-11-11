@@ -2,7 +2,7 @@
 
 **Original course project and report:** Conglin Bao and Xian Wu · Emory University
 
-**[Read the original final report (PDF, 26 pages)](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)**
+**[Read the original final report (PDF, 26 pages)](outputs/SAS_Diabetes_Statistical_Analysis.pdf)**
 
 ## Research questions
 
@@ -20,13 +20,13 @@ BIOS509_SAS_Diabetes_Research_Project/
 │   ├── synthetic_diabetes_demo.csv
 │   └── DATA_DICTIONARY.md
 └── outputs/
-    ├── Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf
+    ├── SAS_Diabetes_Statistical_Analysis.pdf
     └── README.md
 ```
 
 ## Research materials
 
-- **[Final course report](outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)** — actual group report including model specifications, results, and diagnostics.
+- **[Final course report](outputs/SAS_Diabetes_Statistical_Analysis.pdf)** — actual group report including model specifications, results, and diagnostics.
 - **[One final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas)** — organized program with statistical procedures.
 - **[Synthetic example dataset](data/synthetic_diabetes_demo.csv)** — 487 simulated records, intended to illustrate the workflow, not reproduce course estimates.
 - **[Data dictionary](data/DATA_DICTIONARY.md)** — inputs, variable descriptions, and safe-sharing notes.

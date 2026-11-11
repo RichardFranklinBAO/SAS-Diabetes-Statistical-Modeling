@@ -2,7 +2,7 @@
 
 ## Final submitted coursework report
 
-**[Open the final report: Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf](Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)**
+**[Open the final report: SAS_Diabetes_Statistical_Analysis.pdf](SAS_Diabetes_Statistical_Analysis.pdf)**
 
 - **Format:** PDF, 26 pages
 - **Authors:** Conglin Bao and Xian Wu

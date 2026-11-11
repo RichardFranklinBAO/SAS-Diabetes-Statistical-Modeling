@@ -9,7 +9,7 @@ A course-based statistical research project investigating glucose levels and ass
 
 | Item | Direct link | Contents |
 | --- | --- | --- |
-| **Final research report (PDF)** | **[View the 26-page report](BIOS509_SAS_Diabetes_Research_Project/outputs/Conglin_Bao_SAS_Diabetes_Statistical_Analysis.pdf)** | Research questions, methods, ANOVA, logistic regression, statistical tables, diagnostics, discussion |
+| **Final research report (PDF)** | **[View the 26-page report](BIOS509_SAS_Diabetes_Research_Project/outputs/SAS_Diabetes_Statistical_Analysis.pdf)** | Research questions, methods, ANOVA, logistic regression, statistical tables, diagnostics, discussion |
 | Final SAS code | [BIOS509_Diabetes_Analysis_Final.sas](BIOS509_SAS_Diabetes_Research_Project/code/BIOS509_Diabetes_Analysis_Final.sas) | Integrated analysis program, including additions reconstructed after the course submission |
 | Synthetic demonstration data | [synthetic_diabetes_demo.csv](BIOS509_SAS_Diabetes_Research_Project/data/synthetic_diabetes_demo.csv) | 487 simulated observations; **not** the original participant dataset |
 | Project guide | [Project README](BIOS509_SAS_Diabetes_Research_Project/README.md) | Methodology, directory map, execution instructions, reproducibility limits |
