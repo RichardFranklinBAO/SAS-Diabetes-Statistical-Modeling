@@ -1,7 +1,7 @@
 # SAS Statistical Research Portfolio | BIOS 509
 
 **Emory University · BIOS 509 · SAS/STAT**  
-**Original group project and final report:** Xian Wu and Conglin Bao
+**Original group project and final report:** Conglin Bao and Xian Wu
 
 A course-based statistical research project investigating glucose levels and associated predictors, presented with **one consolidated SAS analysis script**, a clearly labeled synthetic demonstration dataset, and the **original 26-page final report**.
 
