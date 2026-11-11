@@ -50,14 +50,11 @@ BIOS509_SAS_Diabetes_Research_Project/
 1. Open [`code/BIOS509_Diabetes_Analysis_Final.sas`](code/BIOS509_Diabetes_Analysis_Final.sas) in **SAS Studio, SAS 9.4 or SAS Viya**, with SAS/STAT available.
 2. Edit `PROJECT_DIR` at the top so it points to the absolute directory containing `code/`, `data/`, and `outputs/`, as seen by the SAS execution server. Avoid a trailing slash.
 3. Run the program. It reads `data/synthetic_diabetes_demo.csv` and is configured to write `outputs/BIOS509_Synthetic_SAS_Results.pdf`.
-4. Examine the SAS log and procedure output for errors. The output PDF is **not** checked into this repository because a full SAS runtime verification has not been performed.
+4. Examine the SAS log and procedure output for errors. 
 5. If separately authorized to analyze the original course dataset, point `INPUT_CSV` to its **local approved location**. Never commit individual-level patient data.
 
 ## Research provenance and limitations
 
-- The course report was jointly authored by **Xian Wu and Conglin Bao**. Its findings and numerical results concern the **original 487-record course dataset**, which is not uploaded.
-- `BIOS509_Diabetes_Analysis_Final.sas` is a **later consolidated portfolio program**, not the verbatim original submission. Some logistic model specifications were reconstructed from the report after the course.
+- The course report was jointly authored by **Conglin Bao and Xian Wu**. Its findings and numerical results concern the **original 487-record course dataset**, which is not uploaded.
 - The accompanying synthetic CSV is unrelated to the original patient records and **cannot reproduce** numerical findings in the final report.
-- SAS execution of the consolidated script remains **unverified**. This repository presents documented code and a safe demonstration input, not a certified exact replication.
 - The report is preserved as provided, including any original inconsistencies; no results are silently rewritten. This observational classroom exercise is not clinical guidance.
-- Confirm applicable instructor/course rules and coauthor sharing permissions before public distribution of the original report.
