@@ -7,7 +7,7 @@ A course-based statistical research project investigating glucose levels and ass
 
 ## Independent Stata replication (2026)
 
-Following the original BIOS 509 course project, **I independently reimplemented the statistical workflow in Stata 16+** and verified key results against the SAS report using the same 487-record course dataset in a private local analysis. This Stata replication is a **subsequent individual project**; the original jointly authored SAS materials remain unchanged.
+Following the original BIOS 509 course project, **I independently reimplemented the statistical workflow in Stata 19** and verified key results against the SAS report using the same 487-record course dataset in a private local analysis. This Stata replication is a **subsequent individual project**; the original jointly authored SAS materials remain unchanged.
 
 | Stata resource | Description |
 | --- | --- |
