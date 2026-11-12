@@ -21,8 +21,6 @@ Using the same **487-observation course dataset** and equivalent statistical tes
 
 ## Notes on comparing the results
 
-- **Wald and LR tests are different tests.** Some figures discussed as model comparisons in the original report correspond to *joint Wald tests*. Stata reproduces those Wald statistics; it also calculates separate likelihood-ratio (LR) tests for the nested models.
-- **Pairwise p-values depend on adjustment.** The original report's printed pairwise p-values match *unadjusted* comparisons despite the Scheffé label. Stata reports both unadjusted and Scheffé-adjusted results. For example, Black vs White gives p ≈ 0.010 unadjusted versus p ≈ 0.083 after Scheffé adjustment; these should not be interpreted as the same test.
 - **Contrast scale and reference category matter.** Matching the SAS contrast weights and relevant logistic-model reference category resolves differences in how otherwise equivalent results are displayed.
 
 **Scope:** The table summarizes results confirmed to match at the original report's precision; it does **not** claim that every coefficient or diagnostic output is identical. The original report remains unchanged.
