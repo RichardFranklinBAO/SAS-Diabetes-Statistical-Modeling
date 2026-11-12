@@ -37,7 +37,6 @@ The local CSV requires the columns id,race,wtkg,gluc,hba1c. **Do not upload this
 | [run_synthetic.do](run_synthetic.do) | Public demonstration; existing synthetic data |
 | [run_local_original.do](run_local_original.do) | Optional local/private workflow |
 | [RESULTS_COMPARISON.md](RESULTS_COMPARISON.md) | SAS vs Stata audit including limitations |
-| [results/verified_aggregate_results.csv](results/verified_aggregate_results.csv) | Selected aggregate results, original course data (not synthetic) |
 | [results/README.md](results/README.md) | Generated output conventions |
 | [data/README.md](data/README.md) | Data privacy and provenance |
 

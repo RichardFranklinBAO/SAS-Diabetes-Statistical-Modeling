@@ -25,4 +25,4 @@ Using the same **487-observation course dataset** and equivalent statistical tes
 
 **Scope:** The table summarizes results confirmed to match at the original report's precision.
 
-**Reproducibility:** These are aggregated results from the private original-data run, **not** from the synthetic demonstration dataset. Original individual-level course data and private logs are not published. See the [Stata source code](code/01_BIOS509_Stata_Analysis.do), [aggregate results CSV](results/verified_aggregate_results.csv), and [replication instructions](README.md).
+**Reproducibility:** These are aggregated results from the private original-data run, **not** from the synthetic demonstration dataset. Original individual-level course data and private logs are not published. See the [Stata source code](code/01_BIOS509_Stata_Analysis.do) and [replication instructions](README.md).
