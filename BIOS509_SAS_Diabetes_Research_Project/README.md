@@ -2,7 +2,7 @@
 
 **Original course project and report:** Conglin Bao and Xian Wu · Emory University
 
-**[Read the original final report (PDF, 26 pages)](outputs/SAS_Diabetes_Statistical_Analysis.pdf)**
+**[Read the course report (reformatted PDF, 28 pages)](outputs/SAS_Diabetes_Statistical_Analysis.pdf)**
 
 ## Research questions
 
@@ -26,7 +26,7 @@ BIOS509_SAS_Diabetes_Research_Project/
 
 ## Research materials
 
-- **[Final course report](outputs/SAS_Diabetes_Statistical_Analysis.pdf)** — actual group report including model specifications, results, and diagnostics.
+- **[Final course report](outputs/SAS_Diabetes_Statistical_Analysis.pdf)** — reformatted version of the jointly authored group report, including model specifications, results, and diagnostics.
 - **[One final SAS program](code/BIOS509_Diabetes_Analysis_Final.sas)** — organized program with statistical procedures.
 - **[Synthetic example dataset](data/synthetic_diabetes_demo.csv)** — 487 simulated records, intended to illustrate the workflow, not reproduce course estimates.
 - **[Data dictionary](data/DATA_DICTIONARY.md)** — inputs, variable descriptions, and safe-sharing notes.
@@ -57,4 +57,4 @@ BIOS509_SAS_Diabetes_Research_Project/
 
 - The course report was jointly authored by **Conglin Bao and Xian Wu**. Its findings and numerical results concern the **original 487-record course dataset**, which is not uploaded.
 - The accompanying synthetic CSV is unrelated to the original patient records and **cannot reproduce** numerical findings in the final report.
-- The report is preserved as provided, including any original inconsistencies; no results are silently rewritten. This observational classroom exercise is not clinical guidance.
+- The linked 28-page PDF retains the course report's research content, results, and diagnostics, while updating the cover, adding page numbering, and removing a redundant heading. It is not a byte-for-byte copy of the original submission. Existing substantive inconsistencies have not been silently rewritten. This observational classroom exercise is not clinical guidance.
