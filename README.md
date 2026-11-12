@@ -5,6 +5,22 @@
 
 A course-based statistical research project investigating glucose levels and associated predictors, presented with **one consolidated SAS analysis script**, a clearly labeled synthetic demonstration dataset, and the **28-page reformatted course report**.
 
+## Independent Stata replication (2026)
+
+Following the original BIOS 509 course project, **I independently reimplemented the statistical workflow in Stata 16+** and verified key results against the SAS report using the same 487-record course dataset in a private local analysis. This Stata replication is a **subsequent individual project**; the original jointly authored SAS materials remain unchanged.
+
+| Stata resource | Description |
+| --- | --- |
+| **[Replication guide](Stata_Replication/README.md)** | Code structure, data policy, and run instructions |
+| [Stata analysis source](Stata_Replication/code/01_BIOS509_Stata_Analysis.do) | ANOVA, contrasts, Scheffé tests, logistic models, diagnostics, Wald/LR tests, and output export |
+| [Public synthetic-data runner](Stata_Replication/run_synthetic.do) | Reuses the repository's existing synthetic CSV |
+| **[SAS vs Stata results and audit](Stata_Replication/RESULTS_COMPARISON.md)** | Verified original-data comparisons and explanations of test discrepancies |
+| [Aggregate validation results (CSV)](Stata_Replication/results/verified_aggregate_results.csv) | Selected statistical results from the local original-data run |
+
+**Original-data verification (November 13, 2026):** ANOVA F(3,483) = 7.1075 (SAS 7.11); planned contrast = −18.6208 (SAS −18.62); Model B group Wald χ²(3) = 14.8641; Model C weight-by-group Wald χ²(3) = 0.8764. The last two are **Wald statistics, not between-model likelihood-ratio tests**. True LR tests and properly Scheffé-adjusted p-values are also reported.
+
+**Reproducibility scope:** Original individual-level data, private run logs, and original-data diagnostic plots are excluded. Public synthetic-data results will not equal the original report's numbers. The original course report and SAS code have not been rewritten.
+
 ## Explore the research
 
 | Item | Direct link | Contents |
