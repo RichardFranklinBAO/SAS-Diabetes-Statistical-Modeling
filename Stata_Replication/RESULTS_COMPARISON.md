@@ -21,7 +21,7 @@ Using the same **487-observation course dataset** and equivalent statistical tes
 
 ## Notes on comparing the results
 
-- **Contrast scale and reference category matter.** Matching the SAS contrast weights and relevant logistic-model reference category resolves differences in how otherwise equivalent results are displayed.
+- **Contrast scale and reference category matter.** The initial differences arose from different model settings rather than calculation errors. SAS used contrast weights that produced −18.6208, while Stata initially used weights half as large, producing −9.3104 with the same statistical significance. The logistic models also initially used different reference groups, which changed the reported coefficients but not the overall model fit. After aligning these settings, Stata successfully reproduced the corresponding SAS results.
 
 **Scope:** The table summarizes results confirmed to match at the original report's precision; it does **not** claim that every coefficient or diagnostic output is identical. The original report remains unchanged.
 
