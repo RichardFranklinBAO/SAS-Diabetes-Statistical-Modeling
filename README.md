@@ -3,13 +3,13 @@
 **Emory University · BIOS 509 · SAS/STAT**  
 **Original group project and final report:** Conglin Bao and Xian Wu
 
-A course-based statistical research project investigating glucose levels and associated predictors, presented with **one consolidated SAS analysis script**, a clearly labeled synthetic demonstration dataset, and the **original 26-page final report**.
+A course-based statistical research project investigating glucose levels and associated predictors, presented with **one consolidated SAS analysis script**, a clearly labeled synthetic demonstration dataset, and the **28-page reformatted course report**.
 
 ## Explore the research
 
 | Item | Direct link | Contents |
 | --- | --- | --- |
-| **Final research report (PDF)** | **[View the 26-page report](BIOS509_SAS_Diabetes_Research_Project/outputs/SAS_Diabetes_Statistical_Analysis.pdf)** | Research questions, methods, ANOVA, logistic regression, statistical tables, diagnostics, discussion |
+| **Final research report (PDF)** | **[View the 28-page report](BIOS509_SAS_Diabetes_Research_Project/outputs/SAS_Diabetes_Statistical_Analysis.pdf)** | Research questions, methods, ANOVA, logistic regression, statistical tables, diagnostics, discussion |
 | Final SAS code | [BIOS509_Diabetes_Analysis_Final.sas](BIOS509_SAS_Diabetes_Research_Project/code/BIOS509_Diabetes_Analysis_Final.sas) | Integrated analysis program, including additions reconstructed after the course submission |
 | Synthetic demonstration data | [synthetic_diabetes_demo.csv](BIOS509_SAS_Diabetes_Research_Project/data/synthetic_diabetes_demo.csv) | 487 simulated observations; **not** the original participant dataset |
 | Project guide | [Project README](BIOS509_SAS_Diabetes_Research_Project/README.md) | Methodology, directory map, execution instructions, reproducibility limits |
@@ -22,10 +22,12 @@ A course-based statistical research project investigating glucose levels and ass
 - Group comparisons: one-way ANOVA, Scheffé-adjusted comparisons, planned contrasts (`PROC GLM`)
 - Diagnostics: residual distributions, Shapiro–Wilk checks and regression influence analysis (`PROC UNIVARIATE`, `PROC REG`)
 - Binary outcome modeling: nested logistic regression, interaction specifications, likelihood-ratio comparisons and influence analysis (`PROC LOGISTIC`, `PROC SQL`)
-- Technical reporting: a jointly authored 26-page course report with tables, figures and interpretation
+- Technical reporting: a jointly authored 28-page reformatted course report with tables, figures and interpretation
 
 ## Provenance and reproducibility
 
 The original patient-level course dataset is excluded. The synthetic dataset is for demonstrating program structure, so its numerical results will not match the original course report.
+
+The linked 28-page PDF preserves the research content and findings of the original jointly authored coursework report but has a redesigned cover, page numbering, and removal of a redundant heading. It is a presentation-formatted version, not a byte-for-byte copy of the originally submitted file.
 
 See the [project guide](BIOS509_SAS_Diabetes_Research_Project/README.md) for run instructions and limitations.
