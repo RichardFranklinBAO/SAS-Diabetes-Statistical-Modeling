@@ -1,6 +1,6 @@
 # SAS–Stata Cross-Software Results and Statistical Audit
 
-**Basis:** Original 2025 jointly authored BIOS 509 SAS report; independently implemented Stata version (2026) successfully executed using the **same 487-row course dataset** on macOS Stata on **November 13, 2026**. This page reports **aggregate results from the private original-data run, not the synthetic demo**. No original observations are published.
+**Basis:** Original 2025 jointly authored BIOS 509 SAS report; independently implemented Stata version (2026) successfully executed using the **same 487-row course dataset** on macOS Stata on **November 2026**. This page reports **aggregate results from the private original-data run, not the synthetic demo**. No original observations are published.
 
 ## Matched results
 
