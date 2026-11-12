@@ -1,40 +1,30 @@
-# SAS–Stata Cross-Software Results and Statistical Audit
+# SAS–Stata Replication: Results Comparison
 
-**Basis:** Original 2025 jointly authored BIOS 509 SAS report; independently implemented Stata version (2026) successfully executed using the **same 487-row course dataset** on macOS Stata on **November 2026**. This page reports **aggregate results from the private original-data run, not the synthetic demo**. No original observations are published.
+**Independent Stata replication | November, 2026**
 
-## Matched results
+Using the same **487-observation course dataset** and equivalent statistical tests, the Stata implementation successfully reproduced the original SAS report's **key results to the reported precision**.
 
-| Metric | Original SAS report | Stata (same original data) | Interpretation |
-| --- | ---: | ---: | --- |
-| Analyzed N | 487 | 487 | Exact |
-| High glucose (gluc > 150) N | 204 | 204 | Exact; 204/487 = 41.89% |
-| Group ANOVA F(3,483) | 7.11 | 7.1074541 | Matches display precision |
-| Planned contrast (1,−1,−1,1) | −18.62 | −18.6207996 | Matches display precision |
-| Model B race joint Wald χ²(3) | 14.8641 | 14.864086 | Matches display precision |
-| Model C wtkg main effect Wald χ²(1) | 3.6865 | 3.6865424 | Matches display precision |
-| Model C HbA1c main effect Wald χ²(1) | 24.7005 | 24.700513 | Matches display precision |
-| Model C race joint Wald χ²(3) | 2.1992 | 2.1992458 | Matches display precision |
-| Model C wtkg × race joint Wald χ²(3) | 0.8764 | 0.87641752 | Matches display precision |
-| Model C HbA1c × race joint Wald χ²(3) | 2.7154 | 2.7154157 | Matches display precision |
-| Model C −2log L | 424.705 | 424.7051 | Matches display precision |
+## Verified results
 
-## What the apparent disagreements mean
+| Analysis | Original SAS report | Stata replication |
+| --- | ---: | ---: |
+| Observations analyzed | 487 | 487 |
+| Glucose > 150 mg/dL | 204 | 204 |
+| One-way ANOVA F | 7.11 | 7.1075 |
+| Planned contrast | −18.62 | −18.6208 |
+| Model B: race joint Wald χ² | 14.8641 | 14.8641 |
+| Model C: weight Wald χ² | 3.6865 | 3.6865 |
+| Model C: HbA1c Wald χ² | 24.7005 | 24.7005 |
+| Model C: race joint Wald χ² | 2.1992 | 2.1992 |
+| Model C: weight × race Wald χ² | 0.8764 | 0.8764 |
+| Model C: HbA1c × race Wald χ² | 2.7154 | 2.7154 |
 
-**Wald vs LR:** SAS report values 14.8641 and 0.8764 correspond to joint **Wald** statistics (Model B race block and Model C wtkg × race block), *not* nested-model likelihood-ratio tests. Correct actual nested LR statistics on the same 487 records are:
+## Notes on comparing the results
 
-| LR comparison | χ² | df | p |
-| --- | ---: | ---: | ---: |
-| Model A to B | 16.137332 | 3 | 0.00106278 |
-| Model B to C | 4.0339426 | 6 | 0.6720829 |
+- **Wald and LR tests are different tests.** Some figures discussed as model comparisons in the original report correspond to *joint Wald tests*. Stata reproduces those Wald statistics; it also calculates separate likelihood-ratio (LR) tests for the nested models.
+- **Pairwise p-values depend on adjustment.** The original report's printed pairwise p-values match *unadjusted* comparisons despite the Scheffé label. Stata reports both unadjusted and Scheffé-adjusted results. For example, Black vs White gives p ≈ 0.010 unadjusted versus p ≈ 0.083 after Scheffé adjustment; these should not be interpreted as the same test.
+- **Contrast scale and reference category matter.** Matching the SAS contrast weights and relevant logistic-model reference category resolves differences in how otherwise equivalent results are displayed.
 
-Model A includes wtkg + hba1c; Model B adds the three race indicators (Pacific Islander reference); Model C adds six race interaction slopes. Model C uses Asian reference for its reported main-effect Wald tests: changing base categories does not change likelihood.
+**Scope:** The table summarizes results confirmed to match at the original report's precision; it does **not** claim that every coefficient or diagnostic output is identical. The original report remains unchanged.
 
-**Scheffé:** SAS report pairwise p-values align with **unadjusted** pairwise t-tests although labeled Scheffé. For Black vs White the unadjusted p ≈ 0.00987 and properly Scheffé-adjusted p ≈ 0.08312. Stata produces and labels both.
-
-**Contrast:** SAS report uses (1,−1,−1,1) and produces −18.6208. Equal-group average coefficients (0.5,−0.5,−0.5,0.5) produce −9.3104. They differ by a factor of two with identical t-statistics.
-
-**Remaining limitations:** Small Model A coefficient discrepancies versus the printed report were not forced to match; SAS prose mentions 490 records read vs 487 analyzed. Native Stata Shapiro–Wilk results differ slightly from SAS implementation. The originally published SAS individual-influence plots have not been proven numerically identical to the Stata diagnostics. These discrepancies should be disclosed, not hidden.
-
-## Data access and execution scope
-
-The original individual-level course dataset, private local Stata logs, and original-data figures are **not redistributed**. [Selected aggregate metrics](results/verified_aggregate_results.csv) are published for inspection; the public [synthetic runner](run_synthetic.do) is for execution demonstration and does not reproduce these original-data numbers. The newly packaged public runner has not yet been separately tested in a real Stata environment.
+**Reproducibility:** These are aggregated results from the private original-data run, **not** from the synthetic demonstration dataset. Original individual-level course data and private logs are not published. See the [Stata source code](code/01_BIOS509_Stata_Analysis.do), [aggregate results CSV](results/verified_aggregate_results.csv), and [replication instructions](README.md).
